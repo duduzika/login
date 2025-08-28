@@ -1,88 +1,63 @@
 *{margin: 0; padding:0;}
 header{
-    height: 150px;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+    align-items:center;
+}
+header .logo{
+        width: 150px;
+    }
+header .logo img{
+       width: 100%;
+}
+header ul{
+	display: flex;
     align-items: center;
-    
+    height: 20vh;
 }
-header nav ul{
-   display: flex; 
-   
+header ul li{
+	list-style: none;
 }
-header nav ul li{
-    list-style: none;
-    margin: 10px;
-
+header ul li a{
+	text-decoration: none;
+	color: #000;
+	padding: 5px 15px;
+	border-radius: 15px;
+	transition: all 500ms ease-in 200ms;
 }
-header nav ul li a{
-    text-decoration: none;
-    color:#333;
+header ul li a:hover{
+	background: black;
+	color: #fff;
 }
-header nav ul li a: hover{
-    color: yellow;
+div.content{
+    display:flex;
 }
-header img{
-    height: 100%;
+main{
+	width: 80%;
+	height: 60vh;
+    border:1px solid black;
 }
-#banner{
-  	height: 350px;
-	background: blue;
-}
-section#noticias ul{
-     width: 1100px;
-     height: auto; 
-     margin: 0 auto;
-    flex-wrap:wrap;
-   
-}
-section#noticias ul li{
-      list-style:none;
-      width: 350px;
-      height:450px;
-     
-}
-section#noticias img{
-      text-align:center;
-      height:150px ;
-      width:100%;
-     
-}
-section#noticias.categoria{
-     text-align: center;
-     background: #900;
-     
-     display: block;
-     padding: 5px 0;
-}
-section#noticias h2{
-     font-size:35px;
-     color:#333333;
-     text-align:center;
-}
-section#noticias h3{
-   text-align: center;
-   font-size: 35px;
-   font-family: arial;
-   margin: 25px 0;
-   text-transform: uppercase;
-}
-section#noticias ul{
-     display: flex; 
-}
-section#noticias ul li a{
-     text-align: center;
-     font-size: 19px;
-     color: white;
+main.bloco-principal{
+     width: 100%;
      background: red;
-     display: block;
-     padding:5px 0;
 }
-section#noticias ul li a:hover{
-     background: blue;
+main.noticia{
+       width: 80%;
+       background: #ccc;
+       display: flex;
 }
-section#noticias ul li p{
-     text-align:center;
-     margin: 15px 0;
+main.noticia img{
+          width:200px;
 }
+aside{
+	width: 20%;
+	height: 60vh;
+	background: gray;
+}
+footer{
+	width: 100%;
+	height: 20vh;
+	background: black;
+}	
