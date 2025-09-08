@@ -1,4 +1,6 @@
-*{margin: 0; padding:0;}
+
+
+*{margin: 0; padding:0; font-family:arial;}
 header{
 	width: 100%;
 	height: 20vh;
@@ -7,10 +9,10 @@ header{
     align-items:center;
 }
 header .logo{
-        width: 75px;
+        width: 150px;
     }
 header .logo img{
-       width: 160%;
+       width: 100%;
 }
 header ul{
 	display: flex;
@@ -39,24 +41,46 @@ main{
 	height: 60vh;
     border:1px solid black;
 }
-main.bloco-principal{
-     width: 100%;
-     background: red;
+main .bloco-principal{
+    width: 100%;
+    padding: 20px;
 }
-main.noticia{
-       width: 80%;
-       background: #ccc;
-       display: flex;
+main .noticia{
+    width: 80%;
+    display:flex;
 }
-main.noticia img{
-          width:200px;
+main .noticia h3{
+    padding: 20px 0;
 }
-main.grid-3{
-     display: flexx;
-     padding: 15px;
+main .noticia img{
+    width:200px;
+    padding: 15px;
 }
-main.grid-3.coluna.img{
-      width: 100%;
+main .noticia p{
+	margin-bottom: 15px;
+}
+main .noticia a{
+	background: blue;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 15px;
+}
+main .grid-3{
+	display: flex;
+	padding: 15px;
+}
+main .grid-3 .coluna{
+	width: 33%;
+    margin: 10px;
+}
+main .grid-3 .coluna img{
+	width: 100%;
+}
+main-grid-3 .coluna h3{
+     text-transform: uppercase;
+     text-aling: center;
+     color: red;
+
 }
 aside{
 	width: 20%;
@@ -66,6 +90,4 @@ aside{
 footer{
 	width: 100%;
 	height: 20vh;
-	background: black;
-}	
 
